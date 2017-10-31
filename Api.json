@@ -32,6 +32,11 @@
             }
           }
         }
+      },
+      "Api key": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
       }
     }
   }

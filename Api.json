@@ -1,1 +1,38 @@
-{"info":{"title":"Apicurio test","description":"","version":"1.0.0"},"openapi":"3.0.0"}
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Apicurio test",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/info": {
+      "get": {}
+    },
+    "/config": {
+      "get": {
+        "responses": {
+          "200": {}
+        }
+      },
+      "post": {}
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "Oauth2": {
+        "type": "oauth2",
+        "flows": {
+          "password": {
+            "tokenUrl": "oauth/token",
+            "refreshUrl": "oauth/refresh",
+            "scopes": {
+              "read": "",
+              "write": ""
+            }
+          }
+        }
+      }
+    }
+  }
+}
